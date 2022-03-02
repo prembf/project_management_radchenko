@@ -1,0 +1,3 @@
+CREATE DATABASE 04 DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci; // Создали 
+SHOW DATABASES; // проверили
+DROP DATABASE productsdb; // удалили 
