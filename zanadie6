@@ -1,0 +1,30 @@
+CREATE TABLE `users` (
+  `idUser` int(11) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `sacondName` varchar(255) NOT NULL,
+  `otchestvo` varchar(255) NOT NULL,
+  `dateBorn` datetime DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `area` varchar(255) DEFAULT 'KAZAKHSTAN',
+  `gender` varchar(6) DEFAULT NULL,
+  `company` varchar(100) DEFAULT NULL,
+  `job` varchar(100) DEFAULT NULL,
+  `street` varchar(50) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `telephone` int(15) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`idUser`, `firstName`, `sacondName`, `otchestvo`, `dateBorn`, `email`, `area`, `gender`, `company`, `job`, `street`, `city`, `telephone`) VALUES
+(1, 'Danil', 'Radchenko', 'Yrevich', '2000-10-02 00:00:00', 'danil@ru.mail', 'KAZAKHSTAN', 'M', 'TSPU', 'TSPU', 'komsoml', 'tomsk', 996637918),
+(2, 'filonov', 'alecsandr', 'sergeevich', '2000-02-10 00:00:00', 'sasha@ru.mail', 'KAZAKHSTAN', 'm', 'ktzh', 'mashinist', 'mametova', 'karaganda', 774749181),
+(3, 'satanislav', 'krupoder', 'evgen', '2001-10-02 00:00:00', 'stas@ru.mail', 'KAZAKHSTAN', 'm', 'ngu', 'student', 'dryzhby', 'novosibirsk', 998334732),
+(4, 'zhenya', 'zhuravlev', 'sergeevich', '2002-10-02 00:00:00', 'zhenya@ru.mail', 'KAZAKHSTAN', 'm', 'ktzh', 'mashinist', 'zhekibaeva', 'karaganda', 7438738),
+(5, 'Vlad', 'Levac', 'danilovich', '2001-10-02 00:00:00', 'levac@ru.mail', 'KAZAKHSTAN', 'm', 'ktzh', 'mashinist', 'moldagulova', 'karaganda', 701984304),
+(6, 'vladislav', 'emcev', 'mixalovich', '2000-11-02 00:00:00', 'emec@ru.mail', 'KAZAKHSTAN', 'm', 'empire', 'povar', 'zhekibaeva', 'karaganda', 7719283),
+(8, 'andrey', 'gumennyj', 'mixa', '2010-10-02 00:00:00', 'guma223@ru.mail', 'KAZAKHSTAN', NULL, 'kpu', 'student', 'zhekibaeva', 'karaganda', 7828342),
+(9, 'stas', 'gurin', 'vicheslavovich', '2005-10-02 00:00:00', 'stasick@ru.mail', 'KAZAKHSTAN', NULL, 'school85', 'schooler', 'schoolboy', 'karaganda', 938723),
+(10, 'anya', 'belkovich', 'yriv', '1998-10-02 00:00:00', 'anya@ru.mail', 'KAZAKHSTAN', 'w', 'ngtu', 'coach', 'zhekibaeva', 'novosibirsk', 932583);
