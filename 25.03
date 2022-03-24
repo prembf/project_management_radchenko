@@ -1,0 +1,23 @@
+-- Структура таблицы `company`
+--
+
+CREATE TABLE `company` (
+  `id_comp` int(11) NOT NULL,
+  `INN` varchar(100) NOT NULL,
+  `OGRN` varchar(250) NOT NULL,
+  `DERECTOR` bigint(20) NOT NULL,
+  `NAME` bigint(20) NOT NULL,
+  `ADDRES` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Структура таблицы `cities`
+--
+
+CREATE TABLE `cities` (
+  `id` int(10) NOT NULL,
+  `CITY_RUS` varchar(50) DEFAULT NULL,
+  `CITY_ENG` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
