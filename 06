@@ -1,0 +1,16 @@
+UPDATE users SET city = 3 WHERE id IN(1, 2, 6);
+
+ALTER TABLE users ADD age INT(100) AFTER birth_day;
+
+UPDATE users SET age = 24 WHERE id in(1);
+UPDATE users SET age = 39 WHERE id in(2);
+UPDATE users SET age = 63 WHERE id in(3);
+UPDATE users SET age = 74 WHERE id in(4);
+UPDATE users SET age = 39 WHERE id in(5);
+
+SELECT AVG(age) AS average_age, MAX(age) AS senior, MIN(age) AS junior 
+FROM users WHERE city = 1;
+SELECT AVG(age) AS average_age, MAX(age) AS senior, MIN(age) AS junior 
+FROM users WHERE city = 2;
+SELECT AVG(age) AS average_age, MAX(age) AS senior, MIN(age) AS junior 
+FROM users WHERE city = 3;
