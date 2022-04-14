@@ -1,0 +1,5 @@
+//Добавил 100 пользователей 
+SELECT company, 
+COUNT(ID) AS 'rabotaut >10' FROM users GROUP BY company HAVING COUNT(ID) > 10;
+SELECT company, 
+COUNT(ID) AS 'rabotaut ot 15 do 20 sotr' FROM users GROUP BY company HAVING COUNT(ID) BETWEEN 15 AND 20;
